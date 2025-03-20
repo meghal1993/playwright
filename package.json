@@ -15,5 +15,8 @@
     "url": "https://github.com/meghal1993/playwright/issues"
   },
   "homepage": "https://github.com/meghal1993/playwright#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
 }
