@@ -49,18 +49,24 @@ jobs:
         password: ${{ secrets.EMAIL_APP_PASSWORD }}
         subject: "Playwright Test Results Summary"
         body: |
-        Dear Team,  
+          Dear Team,  
 
-        I hope this email finds you well.  
+          I hope this email finds you well.  
 
-        Please find attached the latest **Playwright Test Execution Report** from our CI/CD pipeline. Below is a brief summary of the test results:  
+          Please find attached the latest **Playwright Test Execution Report** from our CI/CD pipeline. 
+          We have successfully executed the Playwright tests on the latest code. The report includes detailed information about the test execution, including:
+          - Test Results Summary
+          - Failed Test Cases (if any)
+          - Test Execution Time
+          - Screenshots of Failed Tests
+          - Log Files for Debugging
 
-        We have successfully executed the Playwright tests on the latest code. The report includes detailed information about the test execution, including the test results, screenshots, and other relevant details.
+          If there are any failed tests, please investigate the issues and update the test cases accordingly.
 
-        Please review the attached report for more details. If you have any questions or need further assistance, please let me know.
+          Please review the attached report for more details. If you have any questions or need further assistance, please let me know.
 
-        Best regards,
-        Meghal
+          Best regards,
+          Meghal
       
         to: "ermeghal1993@gmail.com"
         from: ${{ secrets.EMAIL_USER }}
