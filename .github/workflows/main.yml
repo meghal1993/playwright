@@ -44,7 +44,7 @@ jobs:
       if: always()
       with:
         server_address: smtp.gmail.com
-        server_port: 587
+        server_port: 465  # Changed from 587 to 465 for SSL
         username: ${{ secrets.EMAIL_USER }}
         password: ${{ secrets.EMAIL_PASSWORD }}
         subject: "Playwright Test Report"
@@ -57,4 +57,4 @@ jobs:
         to: "ag.megha1993@gmail.com"
         from: "${{ secrets.EMAIL_USER }}"  # Use the same email as username for better deliverability
         attachments: allure-report.zip
-        secure: true  # Enable TLS
+        security: ssl  # Changed from secure: true to security: ssl
