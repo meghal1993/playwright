@@ -1,22 +1,42 @@
 {
-  "name": "test-framework",
+  "name": "seer_playwright",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/meghal1993/playwright.git"
-  },
-  "author": "Meghal",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "Smoke":"npx playwright test --grep /@Smoke/",
+    "Regression": "npx playwright test --grep /@Regression/",
+    "Config1": "npx playwright test --config playwright.config1.ts",
+    "Report": " npx playwright test --reporter=line,allure-playwright",
+    "Report_Generate": "allure generate ./allure-results --clean",
+    "Report_Open": "allure open ./allure-report",
+    "Html_Report":"npx playwright show-report",
+    "Single_File": "npx playwright test userSpacesTest.spec.ts",
+    "test": "npx playwright test && npx playwright show-report && npx allure serve allure-results"
+  }, 
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/meghal1993/playwright/issues"
-  },
-  "homepage": "https://github.com/meghal1993/playwright#readme",
   "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.4",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "allure-playwright": "^3.2.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "globals": "^16.0.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1"
+  },
   "dependencies": {
-    "jquery": "^3.7.1"
+    "@types/crypto-js": "^4.2.2",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "moment-timezone": "^0.5.47",
+    "winston": "^3.17.0"
   }
 }

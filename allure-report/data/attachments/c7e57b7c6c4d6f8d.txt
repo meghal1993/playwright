@@ -1,0 +1,25 @@
+2025-03-11T21:02:36+05:30 [info]: Dashboard title is visible
+2025-03-11T21:02:36+05:30 [info]: Clicked on Analysis button
+2025-03-11T21:02:44+05:30 [info]: Clicked on Plasma Subtype Study button
+2025-03-11T21:02:47+05:30 [info]: Waiting for loader to complete loading
+2025-03-11T21:02:54+05:30 [info]: Loader completed loading successfully
+2025-03-11T21:02:54+05:30 [info]: Attempting to scroll to PCA analysis graph
+2025-03-11T21:02:54+05:30 [info]: Successfully scrolled to PCA analysis graph
+2025-03-11T21:02:56+05:30 [info]: Found 36 data points.
+2025-03-11T21:02:57+05:30 [info]: Point 18 Tooltip Text: -4.71 Sample: S18. Plate: Plate 1 Plasma Subtype Study
+2025-03-11T21:02:57+05:30 [info]: Point 19 Tooltip Text: -4.71 Sample: S19. Plate: Plate 1 Plasma Subtype Study
+2025-03-11T21:02:58+05:30 [info]: Point 20 Tooltip Text: -6.93 Sample: S20. Plate: Plate 1 Plasma Subtype Study
+2025-03-11T21:02:58+05:30 [info]: Point 21 Tooltip Text: -8.24 Sample: S21. Plate: Plate 1 Plasma Subtype Study
+2025-03-11T21:02:59+05:30 [info]: Point 22 Tooltip Text: -8.10 Sample: S21. Plate: Plate 1 Plasma Subtype Study
+2025-03-11T21:02:59+05:30 [info]: Point 23 Tooltip Text: -2.60 Sample: S22. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:00+05:30 [info]: Point 24 Tooltip Text: -5.84 Sample: S24. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:00+05:30 [info]: Point 25 Tooltip Text: -7.51 Sample: S25. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:00+05:30 [info]: Point 26 Tooltip Text: -2.25 Sample: S25. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:01+05:30 [info]: Point 27 Tooltip Text: -4.98 Sample: S26. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:01+05:30 [info]: Point 28 Tooltip Text: -7.32 Sample: S28. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:02+05:30 [info]: Point 29 Tooltip Text: -8.99 Sample: S29. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:02+05:30 [info]: Point 30 Tooltip Text: -4.42 Sample: S30. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:03+05:30 [info]: Point 31 Tooltip Text: -7.25 Sample: S31. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:03+05:30 [info]: Point 32 Tooltip Text: -8.84 Sample: S32. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:04+05:30 [info]: Point 33 Tooltip Text: -3.33 Sample: S32. Plate: Plate 2 Plasma Subtype Study
+2025-03-11T21:03:04+05:30 [info]: Point 34 Tooltip Text: -4.91 Sample: S33. Plate: Plate 3 Plasma Subtype Study

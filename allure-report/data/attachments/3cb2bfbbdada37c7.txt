@@ -1,0 +1,6 @@
+2025-03-11T21:05:11+05:30 [info]: Clicked on User and Spaces button
+2025-03-11T21:05:14+05:30 [info]: Clicked on Add User button
+2025-03-11T21:06:34+05:30 [error]: Error entering User Name: Error: locator.fill: Test timeout of 90000ms exceeded.
+Call log:
+  - waiting for locator('[name="Username"]')
+

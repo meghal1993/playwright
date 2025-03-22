@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","37418","Verify PPI Network Graph in Group Analysis tab - spec file 2","chromium","Tue Mar 11 21:03:07 IST 2025","passed","Tue Mar 11 21:03:44 IST 2025","","analysisTest.spec.ts","",""
+"","36498","Verify PPI Network Graph in Group Analysis tab - spec file 1","chromium","Tue Mar 11 21:04:27 IST 2025","passed","Tue Mar 11 21:05:03 IST 2025","","loginTest.spec.ts","",""
+"","33157","Verify PCA Analysis Graph in Analysis tab - spec file 1","chromium","Tue Mar 11 21:03:53 IST 2025","passed","Tue Mar 11 21:04:27 IST 2025","","loginTest.spec.ts","",""
+"","90939","Verify user is able to a new user - spec File 3","chromium","Tue Mar 11 21:05:03 IST 2025","broken","Tue Mar 11 21:06:34 IST 2025","","userSpacesTest.spec.ts","",""
+"","39357","@Regression Verify PCA Analysis Graph in Analysis tab - spec File 2","chromium","Tue Mar 11 21:02:26 IST 2025","passed","Tue Mar 11 21:03:06 IST 2025","","analysisTest.spec.ts","",""
+"","8696","@Regression Login into the application - spec file 1","chromium","Tue Mar 11 21:03:44 IST 2025","passed","Tue Mar 11 21:03:53 IST 2025","","loginTest.spec.ts","",""

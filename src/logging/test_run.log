@@ -1,0 +1,5 @@
+2025-03-12T16:39:13+05:30 [info]: Clicked on User and Spaces button
+2025-03-12T16:39:13+05:30 [error]: Error clicking Add User button: Error: locator.click: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for getByRole('button', { name: ' Add User ' })[22m
+
