@@ -39,8 +39,8 @@ jobs:
         path: allure-report.zip
         retention-days: 7
 
-    - name: Rename ZIP file to avoid Gmail block
-      run: mv allure-report.zip allure-report.safezip
+    - name: Compress Allure report as tar.gz
+      run: tar -czvf allure-report.tar.gz allure-report/
 
     - name: Send Allure report via email
       uses: dawidd6/action-send-mail@v3
@@ -60,4 +60,4 @@ jobs:
           Note: This is an automated email from the CI/CD pipeline.
         to: "ermeghal1993@gmail.com"
         from: "${{ secrets.EMAIL_USER }}"
-        attachments: allure-report.safezip
+        attachments: allure-report.tar.gz
