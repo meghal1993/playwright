@@ -48,7 +48,13 @@ jobs:
         username: ${{ secrets.EMAIL_USER }}
         password: ${{ secrets.EMAIL_PASSWORD }}
         subject: "Playwright Test Report"
-        body: "Please find the attached Allure report."
-        to: "ag.megha1993@gmail.com, maggarwal@seer.bio"
-        from: "Your CI/CD Bot"
+        body: |
+          Playwright Test Report from GitHub Actions
+          
+          Please find the attached Allure report.
+          
+          Note: This is an automated email from the CI/CD pipeline.
+        to: "ag.megha1993@gmail.com"
+        from: "${{ secrets.EMAIL_USER }}"  # Use the same email as username for better deliverability
         attachments: allure-report.zip
+        secure: true  # Enable TLS
