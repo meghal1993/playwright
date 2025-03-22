@@ -39,6 +39,9 @@ jobs:
         path: allure-report.zip
         retention-days: 7
 
+    - name: Rename ZIP file to avoid Gmail block
+      run: mv allure-report.zip allure-report.safezip
+
     - name: Send Allure report via email
       uses: dawidd6/action-send-mail@v3
       if: always()
@@ -48,13 +51,13 @@ jobs:
         secure: false
         username: ${{ secrets.EMAIL_USER }}
         password: ${{ secrets.EMAIL_APP_PASSWORD }}
-        subject: "Playwright Test Report"
+        subject: "Playwright Test Results Summary"
         body: |
-          Playwright Test Report from GitHub Actions
+          Playwright Test Results Summary from GitHub Actions
           
           Please find the attached Allure report.
           
           Note: This is an automated email from the CI/CD pipeline.
         to: "ermeghal1993@gmail.com"
         from: "${{ secrets.EMAIL_USER }}"
-        attachments: allure-report.zip
+        attachments: allure-report.safezip
