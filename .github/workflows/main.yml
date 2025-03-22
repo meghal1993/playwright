@@ -44,7 +44,8 @@ jobs:
       if: always()
       with:
         server_address: smtp.gmail.com
-        server_port: 465  # Changed from 587 to 465 for SSL
+        server_port: 587
+        secure: true
         username: ${{ secrets.EMAIL_USER }}
         password: ${{ secrets.EMAIL_PASSWORD }}
         subject: "Playwright Test Report"
@@ -54,7 +55,6 @@ jobs:
           Please find the attached Allure report.
           
           Note: This is an automated email from the CI/CD pipeline.
-        to: "ag.megha1993@gmail.com"
-        from: "${{ secrets.EMAIL_USER }}"  # Use the same email as username for better deliverability
+        to: "ermeghal1993@gmail.com"
+        from: "${{ secrets.EMAIL_USER }}"
         attachments: allure-report.zip
-        security: ssl  # Changed from secure: true to security: ssl
