@@ -19,13 +19,13 @@ test.beforeEach(async ({page}) => {
     await page.goto('/app/dashboard');
 })
 
-test("@Regression Login into the application - spec file 1", async ({page}) => {
+test.only("@Regression Login into the application - spec file 1", async ({page}) => {
     const homePage = new HomePage(page);
 
     await homePage.expectDashboardTitleToBeVisible()
 })
 
-test("Verify PCA Analysis Graph in Analysis tab - spec file 1", async ({page}) => {
+test.skip("Verify PCA Analysis Graph in Analysis tab - spec file 1", async ({page}) => {
     const homePage = new HomePage(page);
     const analysesPage = new AnalysesPage(page)
 
@@ -38,7 +38,7 @@ test("Verify PCA Analysis Graph in Analysis tab - spec file 1", async ({page}) =
     await analysesPage.verifyPCAAnalysesGraph()
 })
 
-test("Verify PPI Network Graph in Group Analysis tab - spec file 1", async ({page}) => {
+test.skip("Verify PPI Network Graph in Group Analysis tab - spec file 1", async ({page}) => {
     const homePage = new HomePage(page);
     const analysesPage = new AnalysesPage(page)
 

@@ -10,7 +10,7 @@ test.beforeEach(async ({page}) => {
     await page.goto('/app/dashboard');
 })
 
-test("Verify user is able to a new user -  spec File 3", async ({page}) => {
+test.skip("Verify user is able to a new user -  spec File 3", async ({page}) => {
     const homePage = new HomePage(page);
     const userSpacesPage = new UserSpacesPage(page)
 

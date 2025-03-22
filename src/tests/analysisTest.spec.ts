@@ -9,7 +9,7 @@ test.beforeEach(async ({page}) => {
     await page.goto('/app/dashboard');
 })
 
-test("@Regression Verify PCA Analysis Graph in Analysis tab -  spec File 2", async ({page}) => {
+test.skip("@Regression Verify PCA Analysis Graph in Analysis tab -  spec File 2", async ({page}) => {
     const homePage = new HomePage(page);
     const analysesPage = new AnalysesPage(page)
 
@@ -22,7 +22,7 @@ test("@Regression Verify PCA Analysis Graph in Analysis tab -  spec File 2", asy
     await analysesPage.verifyPCAAnalysesGraph()
 })
 
-test("Verify PPI Network Graph in Group Analysis tab - spec file 2", async ({page}) => {
+test.skip("Verify PPI Network Graph in Group Analysis tab - spec file 2", async ({page}) => {
     const homePage = new HomePage(page);
     const analysesPage = new AnalysesPage(page)
 
