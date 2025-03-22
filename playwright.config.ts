@@ -21,7 +21,7 @@ export default defineConfig({
     screenshot: "on",
     video: 'retain-on-failure',
     trace: 'retain-on-failure',
-    headless: false,                                          // HAve to run in headed mode
+    headless: true,                                          // HAve to run in headed mode
     viewport: null,                                           // Ensures full-screen size
     launchOptions: {
     args: ['--start-maximized']  ,
