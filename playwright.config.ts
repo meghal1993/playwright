@@ -54,6 +54,7 @@ export default defineConfig({
   ],
 
   reporter: [
+    ['list'],
     ['allure-playwright', {
       detail: true,
       outputFolder: "allure-results",
