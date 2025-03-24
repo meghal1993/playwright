@@ -17,26 +17,34 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test
+    
+    - name: Run Playwright tests with Allure
+      run: |
+        export PLAYWRIGHT_JSON_OUTPUT_NAME=allure-results/playwright-report.json
+        npx playwright test --reporter=line,allure-playwright
 
-    - name: Upload Playwright Report Artifact
+    - name: Generate Allure Report
+      run: |
+        npm install -g allure-commandline
+        allure generate allure-results --clean -o allure-report
+
+    - name: Upload Allure Report Artifact
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: playwright-report
-        path: playwright-report/
+        name: allure-report
+        path: allure-report/
         retention-days: 30
 
-    - name: Download Playwright Report Artifact
+    - name: Download Allure Report Artifact
       uses: actions/download-artifact@v4
       with:
-        name: playwright-report
-        path: playwright-report
+        name: allure-report
+        path: allure-report
 
-    - name: Compress Playwright Report
+    - name: Compress Allure Report
       run: |
-        tar -czvf playwright-report.tar.gz playwright-report/
+        tar -czvf allure-report.tar.gz allure-report/
 
     - name: Send HTML report via email
       uses: dawidd6/action-send-mail@v3
@@ -47,14 +55,14 @@ jobs:
         secure: false
         username: ${{ secrets.EMAIL_USER }}
         password: ${{ secrets.EMAIL_APP_PASSWORD }}
-        subject: "Playwright Test Results Summary"
+        subject: "Allure Test Results Summary"
         body: |
           Dear Team,  
 
           I hope this email finds you well.  
 
-          Please find attached the latest **Playwright Test Execution Report** from our CI/CD pipeline. 
-          We have successfully executed the Playwright tests on the latest code. The report includes detailed information about the test execution, including:
+          Please find attached the latest **Allure Test Execution Report** from our CI/CD pipeline. 
+          The report includes detailed information about the test execution, including:
           - Test Results Summary
           - Failed Test Cases (if any)
           - Test Execution Time
@@ -67,6 +75,6 @@ jobs:
 
           Best regards,
           Meghal
-        to: "ermeghal1993@gmail.com , pmohan@seer.bio"
+        to: "ermeghal1993@gmail.com"
         from: ${{ secrets.EMAIL_USER }}
-        attachments: playwright-report.tar.gz
+        attachments: allure-report.tar.gz
