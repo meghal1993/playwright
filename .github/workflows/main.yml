@@ -67,6 +67,6 @@ jobs:
 
           Best regards,
           Meghal
-        to: "ermeghal1993@gmail.com"
+        to: "ermeghal1993@gmail.com , pmohan@seer.bio"
         from: ${{ secrets.EMAIL_USER }}
         attachments: playwright-report.tar.gz
